@@ -14,8 +14,8 @@ const MovieList = (props) => {
 				.then((response) => {
 					setMovies(response.data);
 				})
-				.catch((error) => {
-					console.error('Server Error', error);
+				.catch((err) => {
+					console.err('Server Err', err);
 				});
 		};
 
